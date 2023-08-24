@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    double a;
-    double b;
+    float a;
+    float b;
 
     cout<<"Enter 1st number:";
     cin>>a;
@@ -12,7 +12,7 @@ int main(){
     cin>>b;
 
     char operation;
-    cout<<"Enter the operation to be performed:"
+    cout<<"Enter the operation to be performed:";
     cin>>operation;
 
     double result;
@@ -32,12 +32,12 @@ result=a*b;
 break;
 
 case '/':
-if(b==0)
-cout<<"Division cannot be performed as denominator=0"<<endl;
-return 1;
-else{
-    result=a/b;
-    break;
+if(b==0){
+    cout<<"Division cannot be performed as denominator=0"<<endl;
+    return 1;}
+    else{
+        result=a/b;
+        break;
 }
 
     default:
